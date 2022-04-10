@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script
+      src="https://kit.fontawesome.com/54dd1c0248.js"
+      crossorigin="anonymous">
+    </script>
+    <title>Scrimba Solo Project - Random Password Generator</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="card-container">
+
+        <h2 class="card-heading">Generate a
+          <span class="card-heading-accent">random password</span>
+        </h2>
+        <h3 class="card-heading-supporting-text">
+          Never use an insecure password again.
+        </h3>
+
+        <hr class="line top-line"/>
+
+        <div class="form-field">
+          <form id="form-el" class="form" title="Number between 10-20">
+            <label for="user-input"></label>
+            <input type="number" name="user-input" id="user-input" placeholder="Password length" required>
+          </form>
+          <p class="chevron-down"><i class="fa-solid fa-chevron-down"></i></p>
+          <p class="instructions-text"><span class="three-arrows">&lt;&lt;&lt;</span> Please enter a number between 10-20</p>
+        </div>
+
+        <div class="btn-group">
+          <button id="generate-Pwd-Btn" class="generate-pwd-btn">
+            <i class="fa-solid fa-bolt button-group-icon"></i> Generate passwords
+          </button>
+          <button id="clear-Pwd-Btn" class="clear-pwd-btn">
+            <i class="fa-solid fa-broom button-group-icon"></i> Clear password fields
+          </button>
+        </div>
+
+        <hr class="line"/>
+
+        <div class="password-boxes">
+          <button class="box" title="Click to copy">
+            <i class="fa-solid fa-ellipsis three-dots-icon"></i>  
+          </button>
+          <button class="box" title="Click to copy">
+            <i class="fa-solid fa-ellipsis three-dots-icon"></i>
+          </button>
+          <button class="box" title="Click to copy">
+            <i class="fa-solid fa-ellipsis three-dots-icon"></i>
+          </button>
+          <button class="box" title="Click to copy">
+            <i class="fa-solid fa-ellipsis three-dots-icon"></i>
+          </button>
+        </div>
+
+        <div class="notification-text">Copied!</div>
+
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
